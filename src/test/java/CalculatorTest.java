@@ -32,12 +32,12 @@ public class CalculatorTest {
     }
 
     @Test
-    public void canDivide(){
-        assertEquals(8, calculator.divide(25,3), 0.01);
+    public void canDivideIntResult(){
+        assertEquals(8, calculator.divideIntResult(25,3));
     }
 
     @Test
-    public void canDivideFloat(){
-        assertEquals(8.333333015441895, calculator.divide(25, 3), 0.01);
+    public void canDivideFloatResult(){
+        assertEquals(8.33, calculator.divideFloatResult(25, 3), 0.01);
     }
 }

@@ -16,7 +16,14 @@ public class Calculator {
         return int1 * int2;
     }
 
-    public float divide(float num1, float num2){
-        return  (num1 / num2);
+    public int divideIntResult(int int1, int int2){
+        return int1 / int2;
+    }
+
+    public float divideFloatResult(int int1, int int2){
+        float num1 = int1;
+        float num2 = int2;
+        float answer = num1 / num2;
+        return  answer;
     }
 }
